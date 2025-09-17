@@ -14,6 +14,7 @@ ENABLE_VIRTUAL_AB := true
 AB_OTA_UPDATER := true
 
 # A/B
+AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     lk \
