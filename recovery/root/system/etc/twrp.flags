@@ -1,0 +1,99 @@
+# TWRP Configuration Flags for TECNO POVA 7 NEO (LJ6)
+# Mount point          fstype    device                                 flags
+
+## Boot & Critical Partitions
+/boot_a               emmc      /dev/block/by-name/boot_a            flags=display="Boot A";backup=1;flashimg=1;slotselect
+/boot_b               emmc      /dev/block/by-name/boot_b            flags=display="Boot B";backup=1;flashimg=1;slotselect
+/vendor_boot_a        emmc      /dev/block/by-name/vendor_boot_a     flags=display="Vendor Boot A";backup=1;flashimg=1;slotselect
+/vendor_boot_b        emmc      /dev/block/by-name/vendor_boot_b     flags=display="Vendor Boot B";backup=1;flashimg=1;slotselect
+/dtbo_a               emmc      /dev/block/by-name/dtbo_a            flags=display="DTBO A";backup=1;flashimg=1;slotselect
+/dtbo_b               emmc      /dev/block/by-name/dtbo_b            flags=display="DTBO B";backup=1;flashimg=1;slotselect
+
+## VBMeta & Verification
+/vbmeta_a             emmc      /dev/block/by-name/vbmeta_a          flags=display="VBMeta A";backup=1;flashimg=1;slotselect
+/vbmeta_b             emmc      /dev/block/by-name/vbmeta_b          flags=display="VBMeta B";backup=1;flashimg=1;slotselect
+/vbmeta_system_a      emmc      /dev/block/by-name/vbmeta_system_a   flags=display="VBMeta System A";backup=1;flashimg=1;slotselect
+/vbmeta_system_b      emmc      /dev/block/by-name/vbmeta_system_b   flags=display="VBMeta System B";backup=1;flashimg=1;slotselect
+/vbmeta_vendor_a      emmc      /dev/block/by-name/vbmeta_vendor_a   flags=display="VBMeta Vendor A";backup=1;flashimg=1;slotselect
+/vbmeta_vendor_b      emmc      /dev/block/by-name/vbmeta_vendor_b   flags=display="VBMeta Vendor B";backup=1;flashimg=1;slotselect
+
+## TrustZone & Security
+/tee_a                emmc      /dev/block/by-name/tee_a             flags=display="TEE A";flashimg=1;slotselect
+/tee_b                emmc      /dev/block/by-name/tee_b             flags=display="TEE B";flashimg=1;slotselect
+/seccfg               emmc      /dev/block/by-name/seccfg            flags=display="Secure Config";flashimg=1
+/efuse                emmc      /dev/block/by-name/efuse             flags=display="eFUSE";flashimg=1
+/sec1                 emmc      /dev/block/by-name/sec1              flags=display="Secure 1";invisible
+
+## Modem & Firmware
+/md1img_a             emmc      /dev/block/by-name/md1img_a          flags=display="MD1 Image A";flashimg=1;slotselect
+/md1img_b             emmc      /dev/block/by-name/md1img_b          flags=display="MD1 Image B";flashimg=1;slotselect
+/spmfw_a              emmc      /dev/block/by-name/spmfw_a           flags=display="SPMFW A";flashimg=1;slotselect
+/spmfw_b              emmc      /dev/block/by-name/spmfw_b           flags=display="SPMFW B";flashimg=1;slotselect
+/pi_img_a             emmc      /dev/block/by-name/pi_img_a          flags=display="PI Image A";flashimg=1;slotselect
+/pi_img_b             emmc      /dev/block/by-name/pi_img_b          flags=display="PI Image B";flashimg=1;slotselect
+/dpm_a                emmc      /dev/block/by-name/dpm_a             flags=display="DPM A";flashimg=1;slotselect
+/dpm_b                emmc      /dev/block/by-name/dpm_b             flags=display="DPM B";flashimg=1;slotselect
+/scp_a                emmc      /dev/block/by-name/scp_a             flags=display="SCP A";flashimg=1;slotselect
+/scp_b                emmc      /dev/block/by-name/scp_b             flags=display="SCP B";flashimg=1;slotselect
+/sspm_a               emmc      /dev/block/by-name/sspm_a            flags=display="SSPM A";flashimg=1;slotselect
+/sspm_b               emmc      /dev/block/by-name/sspm_b            flags=display="SSPM B";flashimg=1;slotselect
+/mcupm_a              emmc      /dev/block/by-name/mcupm_a           flags=display="MCUPM A";flashimg=1;slotselect
+/mcupm_b              emmc      /dev/block/by-name/mcupm_b           flags=display="MCUPM B";flashimg=1;slotselect
+/gz_a                 emmc      /dev/block/by-name/gz_a              flags=display="GZ A";flashimg=1;slotselect
+/gz_b                 emmc      /dev/block/by-name/gz_b              flags=display="GZ B";flashimg=1;slotselect
+/lk_a                 emmc      /dev/block/by-name/lk_a              flags=display="LK A";flashimg=1;slotselect
+/lk_b                 emmc      /dev/block/by-name/lk_b              flags=display="LK B";flashimg=1;slotselect
+/logo_a               emmc      /dev/block/by-name/logo_a            flags=display="Logo A";flashimg=1;slotselect
+/logo_b               emmc      /dev/block/by-name/logo_b            flags=display="Logo B";flashimg=1;slotselect
+
+## Connectivity & Other
+/connsys_bt_a         emmc      /dev/block/by-name/connsys_bt_a      flags=display="BT Firmware A";flashimg=1;slotselect
+/connsys_bt_b         emmc      /dev/block/by-name/connsys_bt_b      flags=display="BT Firmware B";flashimg=1;slotselect
+/connsys_wifi_a       emmc      /dev/block/by-name/connsys_wifi_a    flags=display="WiFi Firmware A";flashimg=1;slotselect
+/connsys_wifi_b       emmc      /dev/block/by-name/connsys_wifi_b    flags=display="WiFi Firmware B";flashimg=1;slotselect
+/connsys_gnss_a       emmc      /dev/block/by-name/connsys_gnss_a    flags=display="GNSS Firmware A";flashimg=1;slotselect
+/connsys_gnss_b       emmc      /dev/block/by-name/connsys_gnss_b    flags=display="GNSS Firmware B";flashimg=1;slotselect
+
+## System & Logical Partitions
+/system               erofs     system                               flags=display="System";logical;backup=1;slotselect
+/system_ext           erofs     system_ext                           flags=display="System Ext";logical;backup=1;slotselect
+/vendor               erofs     vendor                               flags=display="Vendor";logical;backup=1;slotselect
+/product              erofs     product                              flags=display="Product";logical;backup=1;slotselect
+/odm                  erofs     odm                                  flags=display="ODM";logical;backup=1;slotselect
+/vendor_dlkm          erofs     vendor_dlkm                          flags=display="Vendor DLKM";logical;backup=1;slotselect
+/system_dlkm          erofs     system_dlkm                          flags=display="System DLKM";logical;backup=1;slotselect
+
+## Data & Cache
+/data                 ext4      /dev/block/by-name/userdata          flags=display="User Data";wipeingui;backup=1
+/metadata             f2fs      /dev/block/by-name/metadata          flags=display="Metadata"
+
+## Persistent & Misc
+/misc                 emmc      /dev/block/by-name/misc              flags=display="Misc"
+/persist              emmc      /dev/block/by-name/persist           flags=display="Persist";flashimg=1
+/flashinfo            emmc      /dev/block/by-name/flashinfo         flags=display="Flash Info";invisible
+/sgpt                 emmc      /dev/block/by-name/sgpt              flags=display="SGPT";invisible
+
+## NVRAM & Configuration
+/nvcfg                emmc      /dev/block/by-name/nvcfg             flags=display="NV Config";flashimg=1
+/nvdata               emmc      /dev/block/by-name/nvdata            flags=display="NV Data";flashimg=1
+/nvram                emmc      /dev/block/by-name/nvram             flags=display="NV RAM";invisible
+/dram_para            emmc      /dev/block/by-name/dram_para         flags=display="DRAM Para";invisible
+
+## Protection & Security
+/protect1             emmc      /dev/block/by-name/protect1          flags=display="Protect 1";flashimg=1
+/protect2             emmc      /dev/block/by-name/protect2          flags=display="Protect 2";flashimg=1
+/tdfs                 emmc      /dev/block/by-name/tdfs              flags=display="TDFS";invisible
+/transec              emmc      /dev/block/by-name/transec           flags=display="Transec";invisible
+/frp                  emmc      /dev/block/by-name/frp               flags=display="FRP";flashimg=1
+
+## Other
+/otp                  emmc      /dev/block/by-name/otp               flags=display="OTP";invisible
+/tranfs               ext4      /dev/block/by-name/tranfs            flags=display="TranFS";backup=1
+/tkv_a                emmc      /dev/block/by-name/tkv_a             flags=display="TKV A";flashimg=1;slotselect
+/tkv_b                emmc      /dev/block/by-name/tkv_b             flags=display="TKV B";flashimg=1;slotselect
+
+## Super Partition
+/super                emmc      /dev/block/by-name/super             flags=display="Super Partition";logical;backup=1
+
+## External Storage
+/storage/sdcard0      vfat      /dev/block/mmcblk1p1                 flags=display="SD Card";storage;removable;wipeingui
