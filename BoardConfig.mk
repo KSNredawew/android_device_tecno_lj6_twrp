@@ -7,7 +7,7 @@
 
 TARGET_DEVICE := LJ6
 
-DEVICE_PATH := device/tecno/TECNO-LJ6
+DEVICE_PATH := device/tecno/LJ6
 
 # Architecture
 TARGET_ARCH := arm64
